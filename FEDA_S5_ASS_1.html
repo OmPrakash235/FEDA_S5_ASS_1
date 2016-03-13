@@ -1,0 +1,21 @@
+<!--Find all h1 elements that are children of a div element and apply a background to them-->
+
+<html>
+	<head>
+		<title>jQuery traversing</title>
+	</head>
+	<body>
+		<h1>abc</h1>
+		<div>
+		<h1>div-1</h1>
+		<h1>div-2</h1>
+		</div>
+		<h1>xyz</h1>
+	</body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('div').children('h1').css('background-color','#00aaff');
+		})
+	</script>
+</html>
